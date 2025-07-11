@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oceanbioserver.mapper.EbookSnapshotMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.oceanbioserver.entity.EbookSnapshot">
+            <id property="id" column="id" />
+            <result property="ebookId" column="ebook_id" />
+            <result property="date" column="date" />
+            <result property="viewCount" column="view_count" />
+            <result property="voteCount" column="vote_count" />
+            <result property="viewIncrease" column="view_increase" />
+            <result property="voteIncrease" column="vote_increase" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,ebook_id,date,view_count,vote_count,view_increase,
+        vote_increase
+    </sql>
+</mapper>
